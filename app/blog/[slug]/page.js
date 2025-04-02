@@ -1,7 +1,12 @@
 import React from "react";
 
-function page() {
-  return <div>page</div>;
+function BlogSlugPage({ params }) {
+  console.log(params);
+  return (
+    <main>
+      <h1>{params.slug}</h1>
+    </main>
+  );
 }
 
-export default page;
+export default BlogSlugPage;
